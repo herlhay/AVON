@@ -24,5 +24,39 @@ namespace SearchFunction
         {
             InitializeComponent();
         }
+
+        private void txtBxSrch_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void txtBxSrch_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+           
+        }
+
+        private void txtBxSrch_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (txtBxSrch.Text == "Type your search here...")
+            {
+                txtBxSrch.Text = "";
+            }
+        }
+
+        private void txtBxSrch_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtBxSrch.Text == "Type your search here...")
+            {
+                txtBxSrch.Text = "";
+            }
+        }
+
+        private void txtBxSrch_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtBxSrch.Text == "")
+            {
+                txtBxSrch.Text = "Type your search here...";
+            }
+        }
     }
 }
