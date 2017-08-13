@@ -15,8 +15,10 @@
                 <TextBlock Name="lblStatus" />
             </StatusBarItem>
         </StatusBar>
-        <TextBox x:Name="txtBxSrch" Height="23" Margin="70,25,10,0" TextWrapping="Wrap" Text="Type your search here..." VerticalAlignment="Top" VerticalContentAlignment="Center" MouseEnter="txtBxSrch_MouseEnter" MouseLeave="txtBxSrch_MouseLeave"/>
-        <Label x:Name="label" Content="Search" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="55"/>
-        <DataGrid x:Name="dtgrdSrchRslt" Margin="0,51,0,13" ForceCursor="True"/>
+        <TextBox x:Name="txtBxSrch" Height="23" Margin="70,25,10,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MouseEnter="txtBxSrch_MouseEnter" MouseLeave="txtBxSrch_MouseLeave" TextChanged="txtBxSrch_TextChanged" Text="Type your search here..."/>
+        <DataGrid x:Name="dtgrdSrchRslt" Margin="0,78,0,13" ForceCursor="True"/>
+        <Button x:Name="btnSrch" Content="Search" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="55" Background="#FF8F8F8F" BorderBrush="{x:Null}" Foreground="White" Click="btnSrch_Click"/>
+        <ListBox x:Name="lstBxAutoCmplt" Margin="70,48,10,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="162" Margin="267,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
